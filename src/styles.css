@@ -1,0 +1,144 @@
+*{
+    margin-left: 7px;
+    margin-right: 7px;
+}
+main{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(to top, rgba(127, 24, 224, 0.007) , rgba(23, 148, 23, 0.034));
+    padding: 10px;
+    border-radius: 40px;
+}
+h2,h3{
+    text-shadow: 2px 4px 2px rgba(212, 212, 209, 0.938);
+    padding: 10px;
+}
+h1:hover{
+    color: rgb(13, 107, 114);
+    font-size:260%;
+    font-family:'Courier New', Courier, monospace;
+}
+p{
+    color: gray;
+}
+div{
+    margin-top: 10px;
+    border-width: 10px;
+}
+ol li{
+    list-style: none;
+    display:inline ;
+}
+section{
+    margin: 30px;
+}
+/*Barra de navegacion*/
+.argPrograma{
+    border-radius: 5%;
+}
+.actividad{
+    color: rgb(97, 31, 158);
+    font-family:Tahoma, sans-serif;
+    padding: 20px;
+    text-align:right;
+}
+.logoBarra{
+    height: 40px;
+    width: 40px;
+}
+/*------------------------*/
+.banner{
+   display: block;
+   border-radius: 15px 15px;
+   background: linear-gradient(90deg, rgba(209, 28, 28, 0) , rgb(255, 255, 255),rgb(192, 125, 219));
+}
+.imagen{
+    height: 500px;
+    border-radius: 15px 15px;
+    border-bottom-right-radius: 333px 333px
+}
+.datos{
+    padding: 15px;
+}
+.logos{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 1px solid rgb(63, 56, 56);
+    filter: drop-shadow(8px 8px 10px rgba(45, 95, 45, 0.795));
+}
+.logos:hover{
+    transform: rotate(16deg);
+}
+.caja{
+    width:900px;
+    display: flex;
+    flex-direction:column;
+    margin: auto;
+    text-align: center;
+}
+.caja .tarjeta{
+    display:inline;
+    border-radius: 6px;
+    margin: 10px;
+    border: 0.5px solid rgb(12, 12, 12);
+    background-color: rgb(255, 255, 255);
+    padding: 2px 16px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.caja .tarjeta img{
+    width:140px;
+    height:auto;
+    padding:10px;
+    margin:10px;
+    border-radius: 6px;
+    float: left;
+    border: 1px solid black;
+    background-color:rgb(248, 248, 248);
+}
+
+@media screen and (max-width: 1023px) {
+    .banner{
+        display: block;
+        border-radius: 15px 15px;
+        background: linear-gradient(90deg, rgba(209, 28, 28, 0) , rgba(255, 255, 255, 0),rgba(199, 161, 191, 0.712));
+    }
+}  
+
+@media screen and (max-width: 991px) {
+    .banner{
+        display: block;
+        background: linear-gradient(90deg, rgba(209, 28, 28, 0) , rgba(255, 255, 255, 0),rgba(241, 235, 241, 0.712));
+    }
+    .caja{
+        width:auto;
+        display: flex;
+        flex-direction:column;
+        margin: auto;
+        text-align: center;
+    }
+    .caja .tarjeta{
+        padding: 2px 16px;
+    }
+    .caja .tarjeta img{
+        width:0;
+        height:0;
+        background-color:rgb(8, 8, 8);
+    }
+}
+@media screen and (max-width: 850px) {
+    main{
+        font-family:'Courier New', Courier, monospace;
+    }
+    .banner{
+        display: block;
+        background: linear-gradient(90deg, rgba(209, 28, 28, 0) , rgba(255, 255, 255, 0),rgba(255, 255, 255, 0.712));
+    }
+    .caja .tarjeta:hover{
+        transform: rotate(5deg);
+    }
+}
+@media screen and (max-width: 540px) {
+    main{
+        background: linear-gradient(to top, rgba(255, 255, 255, 0.199) , rgba(255, 255, 255, 0.034));
+    }
+}

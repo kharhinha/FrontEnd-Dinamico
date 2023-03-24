@@ -1,0 +1,90 @@
+{
+    "Banner":"assets/imagenes/Banner/brujula.png",
+    "Alt":"Union de Circulos",
+    "InLogo":"assets/imagenes/linkedin-logos/LinkedIn-Logos/In/Digital/Blue/2x/In-Blue-48-Ôö¼┬½@2x.png",
+    "GitLogo":"assets/imagenes/github-mark/github-mark/github-mark.png",
+    "ArgPrograma":"assets/imagenes/argPrograma2.jpg",
+    
+    "Persona": {
+        "Nombre": "Karina R. Olivera",
+        "Profesion": "Full Stack Developer Jr."
+    },
+    "Experiencia": [
+        {
+            "Puesto": "Mantenimiento de Hardware e Insatalación de Software.",
+            "LugarTrabajo": "Clientes particulares. Mendoza.",
+            "Periodo": "2013-2015.",
+            "Img": "assets/imagenes/Hardware and Software.png",
+            "Alt": "Logo de mi servicio",
+            "Actividad": [ "Me encargaba de la limpieza de placa madre, fuente de alimentación.",
+            "Instalación de Software de aplicación."]
+        },
+        {
+            "Puesto": "Data entry. Programa Todos Pueden Aprender.",
+            "LugarTrabajo": "Dirección General de Escuelas. Ministerio de Educación. Mendoza.",
+            "Periodo": "2010",
+            "Img": "assets/imagenes/dge.jpg",
+            "Alt": "logo direccion general de escuelas",
+            "Actividad": [
+                "Me encargaba de la habilitación de escuelas en el sistema de itinerarios escolares asistidos (SITIESA). Así como: ubicación, sector, ámbito y estructura de grados.",
+                "Alta de docentes. Antigüedad, condición de revista.",
+                "Carga de datos filiatorios de alumnos. Inasistencias. Notas de evaluaciones."
+            ]
+        },
+        {
+            "Puesto": "Organización de Documentos. Practicas.",
+            "LugarTrabajo": "Municipalidad de Las Heras. Área Habilitación de Comercio. Mendoza.",
+            "Periodo": "2007",
+            "Img": "assets/imagenes/municipalidad.png",
+            "Alt": "logo municipalidad de las Heras",
+            "Actividad": [
+                "Me encargaba de la organización y colocación de documentos en carpetas, para su posterior archivado."
+            ]
+        }
+    ],
+    "Educacion": [
+        {
+            "Instituto": "Codo a Codo 4.0 Agencia de aprendizaje a lo largo de la vida.",
+            "Lugar": " Buenos Aires.",
+            "Titulo": "Desarrollo Web - FullStack JavaScript/Node.JS. 2022",
+            "Img": "assets/imagenes/codoAcodo.png",
+            "Alt": "Logo codo a codo"
+        },
+        {
+            "Instituto": "EGG Educación.",
+            "Lugar": "Mendoza.",
+            "Titulo": "Desarrollador FullStack Java. 2021",
+            "Img": "assets/imagenes/egg.jpg",
+            "Alt": "Logo egg educacion"
+        },
+        {
+            "Instituto": "Instituto Superior Técnico de Estudios Económicos de cuyo",
+            "Lugar": " Mendoza.",
+            "Titulo": "Técnico en administración y contabilidad empresarial. 2011",
+            "Img": "assets/imagenes/isteec.jpg",
+            "Alt": "Logo isteec"
+        }
+    ],
+    "Habilidades": [
+        {
+            "Img": "assets/imagenes/java.png",
+            "Alt": "Logo java"
+        },
+        {
+            "Img": "assets/imagenes/javaScript.jpg",
+            "Alt": "Logo javaScript"
+        },
+        {
+            "Img": "assets/imagenes/html.png",
+            "Alt": "Logo html"
+        },
+        {
+            "Img": "assets/imagenes/css.jpg",
+            "Alt": "Logo css"
+        },
+        {
+            "Img": "assets/imagenes/angular.jpg",
+            "Alt": "Logo angular"
+        }
+    ]
+}

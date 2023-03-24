@@ -1,0 +1,14 @@
+<h3>Experiencia</h3>
+<div class="datos">
+    <div class="caja">
+        <div *ngFor="let exp of expList" class="tarjeta">
+            <img [src]="exp.Img" alt={{exp.Alt}}>
+            <h6> {{exp.Puesto}} {{exp.Periodo}} </h6>
+            <h6>{{exp.LugarTrabajo}}</h6>
+            <div class="actividad">
+                <h6>Actividades realizadas:</h6>
+                <p *ngFor="let act of exp.Actividad">{{act}}</p>
+            </div>
+        </div>
+    </div>
+</div>
