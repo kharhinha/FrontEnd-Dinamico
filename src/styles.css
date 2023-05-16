@@ -1,12 +1,14 @@
-*{
+footer{
     margin-left: 7px;
     margin-right: 7px;
 }
 main{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: linear-gradient(to top, rgba(127, 24, 224, 0.007) , rgba(23, 148, 23, 0.034));
     padding: 10px;
     border-radius: 40px;
+    margin-left: 7px;
+    margin-right: 7px;
 }
 h2,h3{
     text-shadow: 2px 4px 2px rgba(212, 212, 209, 0.938);
@@ -42,8 +44,9 @@ section{
     text-align:right;
 }
 .logoBarra{
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
+    margin: 2px;
 }
 /*------------------------*/
 .banner{
@@ -60,8 +63,8 @@ section{
     padding: 15px;
 }
 .logos{
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
     border-radius: 50%;
     border: 1px solid rgb(63, 56, 56);
     filter: drop-shadow(8px 8px 10px rgba(45, 95, 45, 0.795));
@@ -86,7 +89,7 @@ section{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 .caja .tarjeta img{
-    width:140px;
+    width:7em;
     height:auto;
     padding:10px;
     margin:10px;
@@ -96,11 +99,41 @@ section{
     background-color:rgb(248, 248, 248);
 }
 
+/*Inicio de sesion*/
+.division {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centro {
+    width: auto;
+    height: auto;
+    /* centrar vertical y horizontalmente */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+/*----Editar,Agregar -----*/
+.edicion{
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    text-align:left;
+    padding: 25px;
+    border-radius: 50px;
+    background-color: rgb(248, 248, 248);
+}
+/*---------*/
 @media screen and (max-width: 1023px) {
     .banner{
         display: block;
         border-radius: 15px 15px;
         background: linear-gradient(90deg, rgba(209, 28, 28, 0) , rgba(255, 255, 255, 0),rgba(199, 161, 191, 0.712));
+    }
+    .centro {
+        left: 60%;
     }
 }  
 
@@ -124,6 +157,10 @@ section{
         height:0;
         background-color:rgb(8, 8, 8);
     }
+
+    .centro {
+        position: sticky;
+    }
 }
 @media screen and (max-width: 850px) {
     main{
@@ -135,6 +172,11 @@ section{
     }
     .caja .tarjeta:hover{
         transform: rotate(5deg);
+    }
+
+    .edicion{
+        width: 500px;
+        height: auto;
     }
 }
 @media screen and (max-width: 540px) {

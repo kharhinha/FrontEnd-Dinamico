@@ -1,11 +1,22 @@
 <h3>Educación</h3>
+<div>
+    <button type="button" routerLink="/nuevaEducacion" *ngIf="!enLogin" class="btn btn-primary">Agregar educación</button><!--si inicio sesion  *ngIf=""-->
+</div>
 <div class="datos">
     <div class="caja">
-        <div *ngFor="let edu of eduList" class="tarjeta">
-            <img [src]="edu.Img" alt={{edu.Alt}}>
-            <h6>{{edu.Titulo}}</h6>
-            <p>{{edu.Lugar}}</p>
-            <p>{{edu.Instituto}}</p>
+        <div  class="tarjeta  shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+            <table class="table table-secondary">
+                <thead>
+                    <tr *ngFor="let ed of educacion">
+                        <th scope="col"><img [src]="ed.logo" class="border border-3"></th>
+                        <th scope="col">{{ed.titulo}} </th>
+                        <th scope="col">{{ed.instituto}} {{ed.provincia}} {{ed.fechaFin | date:"yyyy-MM-dd"}} </th>
+                        <th scope="col" *ngIf="!enLogin"><button routerLink="editEducacion/{{ed.id}}" class="btn btn-secondary"><i class="bi bi-pen"></i>Editar</button></th>
+                        <th scope="col" *ngIf="!enLogin" ><button (click)="delete(ed.id)" class="btn btn-danger"> <i class="bi bi-trash"></i>Borrar</button>
+                        </th>
+                    </tr>
+                </thead>
+            </table>
         </div>
     </div>
 </div>

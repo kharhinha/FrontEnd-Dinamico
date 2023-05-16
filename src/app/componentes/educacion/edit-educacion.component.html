@@ -1,0 +1,41 @@
+
+<main>
+    <h3>Editar educacion</h3>
+    <div *ngIf="educar" class="edicion border border-3">
+        <div>
+            <form (ngSubmit)="edicion()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="instituto">Instituto</label>
+                    <input type="text" class="form-control" id="instituto" name="instituto" [(ngModel)]="educar.instituto">
+                </div>
+
+                <div class="form-group">
+                    <label for="provincia">Provincia</label>
+                    <input type="text" class="form-control" id="provincia" name="provincia" [(ngModel)]="educar.provincia">
+                </div>
+
+                <div class="form-group">
+                    <label for="titulo">Titulo</label>
+                    <input type="text" class="form-control" id="titulo" name="titulo"
+                        [(ngModel)]="educar.titulo">
+                </div>
+
+                <div class="form-group">
+                    <label for="lugarTrabajo">Logo</label>
+                    <input type="image" class="form-control" id="logo" name="logo"
+                        [(ngModel)]="educar.logo">
+                </div>
+
+                <div class="form-group">
+                    <label for="fechaFin">Fecha de finalización</label>
+                    <input type="date" class="form-control" id="fechaFin" name="fechaFin" [(ngModel)]="educar.fechaFin">
+                </div>
+      
+                <button class="btn btn-primary">Modificar</button>
+            </form>
+        </div>
+    </div>
+</main>
+<footer>
+    <a href="#subir" class="btn btn-primary">Volver</a>
+</footer>

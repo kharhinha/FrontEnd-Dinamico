@@ -1,0 +1,46 @@
+
+<main>
+    <h3>Editar experiencia</h3>
+    <div *ngIf="exp" class="edicion border border-3">
+        <div>
+            <form (ngSubmit)="edicion()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombre">Puesto</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="exp.puesto">
+                </div>
+
+                <div class="form-group">
+                    <label for="logo">Logo</label>
+                    <input type="image" class="form-control" id="logo" name="logo" [(ngModel)]="exp.logo">
+                </div>
+
+                <div class="form-group">
+                    <label for="lugarTrabajo">Lugar de trabajo</label>
+                    <input type="text" class="form-control" id="lugarTrabajo" name="lugarTrabajo"
+                        [(ngModel)]="exp.lugarTrabajo">
+                </div>
+
+                <div class="form-group">
+                    <label for="fechaInicio">Inicio</label>
+                    <input type="date" class="form-control" id="fechaInicio" name="fechaInicio"
+                        [(ngModel)]="exp.fechaInicio">
+                </div>
+
+                <div class="form-group">
+                    <label for="fechaFin">Fin</label>
+                    <input type="date" class="form-control" id="fechaFin" name="fechaFin" [(ngModel)]="exp.fechaFin">
+                </div>
+
+                <div class="form-group">
+                    <label for="descripcion">Actividad realizada</label>
+                    <input type="text" class="form-control" id="descripcion" name="descripcion"
+                        [(ngModel)]="exp.descripcion">
+                </div>
+                <button class="btn btn-primary">Modificar</button>
+            </form>
+        </div>
+    </div>
+</main>
+<footer>
+    <a href="#subir" class="btn btn-primary" >Volver</a>
+</footer>

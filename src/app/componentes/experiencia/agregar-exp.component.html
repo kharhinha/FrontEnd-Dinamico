@@ -1,0 +1,49 @@
+
+<main>
+    <h3>Agregar experiencia</h3>
+    <div class="edicion border border-3">
+        <div>
+            <form (ngSubmit)="crear()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombre">Puesto</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="puesto">
+                </div>
+
+                <div class="form-group">
+                    <label for="logo">Logo</label>
+                    <input type="image" class="form-control" id="logo" name="logo" [(ngModel)]="logo">
+                </div>
+
+                <div class="form-group">
+                    <label for="lugarTrabajo">Lugar de trabajo</label>
+                    <input type="text" class="form-control" id="lugarTrabajo" name="lugarTrabajo"
+                        [(ngModel)]="lugarTrabajo">
+                </div>
+
+                <div class="form-group">
+                    <label for="fechaInicio">Inicio</label>
+                    <input type="date" class="form-control" id="fechaInicio" name="fechaInicio"
+                        [(ngModel)]="fechaInicio">
+                </div>
+
+                <div class="form-group">
+                    <label for="fechaFin">Fin</label>
+                    <input type="date" class="form-control" id="fechaFin" name="fechaFin" [(ngModel)]="fechaFin">
+                </div>
+
+                <div class="form-group">
+                    <label for="descripcion">Actividad realizada</label>
+                    <input type="text" class="form-control" id="descripcion" name="descripcion"
+                        [(ngModel)]="descripcion">
+                </div>
+
+                <div>
+                    <button class="btn btn-success">Agregar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</main>
+<footer>
+    <a href="#subir" class="btn btn-primary" >Volver</a>
+</footer>

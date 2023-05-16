@@ -1,31 +1,29 @@
 <header>
   <a name="subir"></a>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary bg-light">
     <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
-        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <a class="navbar-brand"><img [src]="barra.ArgPrograma" alt="logo Argentina programa"
-            class="argPrograma">#YoProgramo</a>
-        <ul class="navbar-nav me-auto mb-lg-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">
-              <img [src]="barra.InLogo"
-                alt="logo linkedin oficial" class="logoBarra"></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><img [src]="barra.GitLogo"
-                alt="logo github oficial" class="logoBarra"></a>
-          </li>
-        </ul>
-        <form class="container-fluid nav">
-          <button class="btn btn-sm btn-outline-secondary d-flex" type="button">Login</button>
-        </form>
-      </div>
+        <a href=""  class="navbar-brand"><img [src]="barra.ArgPrograma" alt="logo Argentina programa"
+                class="argPrograma"></a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo01">
+            <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="#"><img
+                  [src]="barra.InLogo"
+                    alt="logo linkedin oficial" class="logoBarra"></a>
+                <a class="nav-link" href="#"> <img [src]="barra.GitLogo"
+                    alt="logo github oficial" class="logoBarra"></a>
+                <form class="d-flex" role="search">
+                  <a href="/login" class="btn btn-primary" >Login</a>
+                </form>
+              </div>
+        </div>
     </div>
-  </nav>
+</nav>
 
   <div class="banner">
     <img [src]="barra.Banner" alt={{barra.Alt}} class="imagen">

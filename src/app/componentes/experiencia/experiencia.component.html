@@ -1,14 +1,23 @@
 <h3>Experiencia</h3>
+<div>
+    <button type="button" routerLink="/nuevaExperiencia" *ngIf="!enLogin" class="btn btn-primary">Agregar experiencia</button><!--si inicio sesion  *ngIf=""-->
+</div>
 <div class="datos">
     <div class="caja">
-        <div *ngFor="let exp of expList" class="tarjeta">
-            <img [src]="exp.Img" alt={{exp.Alt}}>
-            <h6> {{exp.Puesto}} {{exp.Periodo}} </h6>
-            <h6>{{exp.LugarTrabajo}}</h6>
-            <div class="actividad">
-                <h6>Actividades realizadas:</h6>
-                <p *ngFor="let act of exp.Actividad">{{act}}</p>
-            </div>
+        <div  class="tarjeta  shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+            <table class="table table-secondary">
+                <thead>
+                    <tr *ngFor="let exp of experiencia">
+                        <th scope="col"><img [src]="exp.logo" class="border border-3"></th>
+                        <th scope="col">{{exp.puesto}} {{exp.fechaInicio | date:"yyyy-MM-dd"}} {{exp.fechaFin | date:"yyyy-MM-dd"}}</th>
+                        <th scope="col">{{exp.descripcion}}</th>
+                        <th scope="col">{{exp.lugarTrabajo}}</th>
+                        <th scope="col" *ngIf="!enLogin"><button routerLink="editarExperiencia/{{exp.id}}" class="btn btn-secondary"><i class="bi bi-pen"></i>Editar</button></th>
+                        <th scope="col" *ngIf="!enLogin" ><button (click)="delete(exp.id)" class="btn btn-danger"> <i class="bi bi-trash"></i>Borrar</button>
+                        </th>
+                    </tr>
+                </thead>
+            </table>
         </div>
     </div>
 </div>

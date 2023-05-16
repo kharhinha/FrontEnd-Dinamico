@@ -1,0 +1,42 @@
+
+<main>
+    <h3>Agregar educación</h3>
+    <div class="edicion border border-3">
+        <div>
+            <form (ngSubmit)="crear()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="instituto">Instituto</label>
+                    <input type="text" class="form-control" id="instituto" name="instituto" [(ngModel)]="instituto">
+                </div>
+
+                <div class="form-group">
+                    <label for="provincia">Provincia</label>
+                    <input type="text" class="form-control" id="provincia" name="provincia" [(ngModel)]="provincia">
+                </div>
+
+                <div class="form-group">
+                    <label for="titulo">Titulo</label>
+                    <input type="text" class="form-control" id="titulo" name="titulo" [(ngModel)]="titulo">
+                </div>
+
+                <div class="form-group">
+                    <label for="lugarTrabajo">Logo</label>
+                    <input type="image" class="form-control" id="logo" name="lugarTrabajo" [(ngModel)]="logo">
+                </div>
+
+
+                <div class="form-group">
+                    <label for="fechaFin">Fecha de finalización</label>
+                    <input type="date" class="form-control" id="fechaFin" name="fechaFin" [(ngModel)]="fechaFin">
+                </div>
+
+                <div>
+                    <button class="btn btn-success">Agregar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</main>
+<footer>
+    <a href="#subir" class="btn btn-primary">Volver</a>
+</footer>

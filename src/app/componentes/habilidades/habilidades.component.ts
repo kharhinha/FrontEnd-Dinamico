@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { DatosService } from 'src/app/servicios/datos.service';
 
 @Component({
@@ -6,7 +6,7 @@ import { DatosService } from 'src/app/servicios/datos.service';
   templateUrl: './habilidades.component.html',
   styleUrls: ['./habilidades.component.css']
 })
-export class HabilidadesComponent {
+export class HabilidadesComponent implements OnInit{
   habiList:any;
   constructor(private datosPorfolio: DatosService){
   }

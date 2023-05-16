@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { DatosService } from 'src/app/servicios/datos.service';
 
 @Component({
@@ -6,7 +6,7 @@ import { DatosService } from 'src/app/servicios/datos.service';
   templateUrl: './navegacion.component.html',
   styleUrls: ['./navegacion.component.css']
 })
-export class NavegacionComponent {
+export class NavegacionComponent implements OnInit{
   barra:any;
   constructor(private datosPorfolio: DatosService){
   }
